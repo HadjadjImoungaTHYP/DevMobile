@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="title">TP1 HADJADJ ET IMOUNGA</string>
+    <string name="choix_1">Vous avez choisi : </string>
+    <string name="choix_2">Entrez votre choix : </string>
+    <string name="user_name"></string>
+</resources>
