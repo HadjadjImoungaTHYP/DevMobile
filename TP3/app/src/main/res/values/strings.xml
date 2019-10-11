@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TP3</string>
+    <string name="title">TP3 HADJADJ ET IMOUNGA</string>
+    <string name="choix_1">Vous avez choisi : </string>
+    <string name="choix_2">Entrez votre choix : </string>
+    <string name="user_name"></string>
+    <string name="btn_modif">Modifier</string>
+    <string name="btn_annuler">Annuler</string>
+    <string name="btn_valider">Valider</string>
+    <string name="toast_chainevide">Veuillez écrire quelque chose</string>
+    <string name="txt_entrer_choix">Entrez votre choix</string>
+</resources>
