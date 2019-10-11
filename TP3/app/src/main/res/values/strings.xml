@@ -9,4 +9,8 @@
     <string name="btn_valider">Valider</string>
     <string name="toast_chainevide">Veuillez écrire quelque chose</string>
     <string name="txt_entrer_choix">Entrez votre choix</string>
+    
+    <array name="ListEntries">
+        <item></item>
+    </array>
 </resources>

@@ -14,7 +14,8 @@
         android:text="@string/btn_annuler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnValider"
-        app:layout_constraintTop_toTopOf="@+id/btnValider" />
+        app:layout_constraintTop_toTopOf="@+id/btnValider"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -24,7 +25,8 @@
         android:layout_marginTop="8dp"
         android:text="@string/txt_entrer_choix"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
 
     <EditText
         android:id="@+id/editChoix"
@@ -50,4 +52,14 @@
         app:layout_constraintEnd_toStartOf="@+id/btnAnnuler"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editChoix" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="409dp"
+        android:layout_height="593dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintright_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnValider"
+        app:layout_constraintBottom_toLeftOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
