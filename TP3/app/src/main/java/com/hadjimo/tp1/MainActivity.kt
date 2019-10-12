@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView_main.layoutManager = LinearLayoutManager(this)
 
         val items = listOf<Article>(
-            Article(1,"Gamer Pc","Alien","Ware","alienware@youyou.com","dipsy"),
-            Article(2,"Noob Monster","Zombie","Land","zl@youyou.com","dipsy"),
-            Article(3,"Poseidon Horse","Kraken","Popo","thaKraken@youyou.com","dipsy"),
-            Article(4,"Blood God","Kratos","Killer","krakillall@youyou.com","dipsy")
+            Article(1,"Livre : Gamer Pc","Alien","dipsy","2015","Note : 7/10"),
+            Article(2,"Livre : Noob Monster","Zombie","Land","2019","Note : 7/10"),
+            Article(3,"Livre : Poseidon Monster","Kraken","Popo","2000","Note : 8/10"),
+            Article(4,"Livre : Blood God","Kratos","Killer", "2018","Note : 10/10")
             )
 
         val homeFeed = HomeFeed(items)
@@ -32,4 +32,4 @@ class MainActivity : AppCompatActivity() {
 
 class HomeFeed(val article: List<Article>)
 
-class Article(val id: Int, val title: String, val name: String, val prenom: String, val email: String, var auteur: String)
+class Article(val id: Int, val title: String, val name: String, var auteur: String, var annee: String, var note: String)

@@ -24,16 +24,27 @@ class MainAdapter(val homeFeed: HomeFeed): RecyclerView.Adapter<CustomViewHolder
         val article = homeFeed.article.get(position)
         holder.view?.textView_article_title?.text = article.title
         holder.view?.textView_article_name?.text = article.name
-    }
 
+        holder?.article = article
+    }
 }
 
-class CustomViewHolder(val view: View): RecyclerView.ViewHolder(view) {
+class CustomViewHolder(val view: View, var article: Article? = null): RecyclerView.ViewHolder(view) {
+
+    // Permet de passer
+    companion object {
+        val KEY_ARTICLE_TITLE = "TITLE_ARTICLE"
+        val KEY_ARTICLE_NAME = "NAME_ARTICLE"
+    }
+
     init {
         view.setOnClickListener {
-            println("TEst")
+            println("SVP FAUT QUE CA MAAAAAAAAAAAAAAAARCHE")
 
+            // Passer les infos a une autre activité
             val intent = Intent(view.context, DetailsActivity::class.java)
+            intent.putExtra(KEY_ARTICLE_TITLE, article?.title)
+            intent.putExtra(KEY_ARTICLE_NAME, article?.name)
 
             view.context.startActivity(intent)
         }
