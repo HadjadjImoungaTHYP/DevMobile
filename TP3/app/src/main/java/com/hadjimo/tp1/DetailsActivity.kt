@@ -3,6 +3,7 @@ package com.hadjimo.tp1
 import android.graphics.Color
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
@@ -29,10 +30,10 @@ class DetailsActivity : AppCompatActivity() {
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailsViewHolder {
-            val blueView = View(parent?.context)
-            blueView.setBackgroundColor(Color.BLUE)
-            blueView.minimumHeight = 50
-            return DetailsViewHolder(blueView)
+            val layoutInflater = LayoutInflater.from(parent?.context)
+            val customView = layoutInflater.inflate(R.layout.details_row, parent, false)
+
+            return DetailsViewHolder(customView)
         }
 
         override fun onBindViewHolder(holder: DetailsViewHolder, position: Int) {

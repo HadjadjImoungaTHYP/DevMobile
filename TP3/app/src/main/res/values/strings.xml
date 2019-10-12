@@ -13,6 +13,11 @@
     <string name="textview">TextView</string>
     <string name="video_title">Video Title</string>
     <string name="article_title">article</string>
+    <string name="TitleDetails">TitleDetails</string>
+    <string name="NameDetails">NameDetails</string>
+    <string name="PrenomDetails">PrenomDetails</string>
+    <string name="EmailDetails">EmailDetails</string>
+    <string name="AuteurDetails">AuteurDetails</string>
 
     <array name="ListEntries">
         <item></item>
