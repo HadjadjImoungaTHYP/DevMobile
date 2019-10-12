@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView_main.layoutManager = LinearLayoutManager(this)
 
         val items = listOf<Article>(
-            Article(1,"Etudiant","Alien","Ware","alienware@youyou.com","dipsy"),
-            Article(2,"Etudiant","Zombie","Land","zl@youyou.com","dipsy"),
-            Article(3,"Etudiant","Kraken","Popo","thaKraken@youyou.com","dipsy"),
-            Article(4,"Etudiant","Kratos","Killer","krakillall@youyou.com","dipsy")
+            Article(1,"Gamer Pc","Alien","Ware","alienware@youyou.com","dipsy"),
+            Article(2,"Noob Monster","Zombie","Land","zl@youyou.com","dipsy"),
+            Article(3,"Poseidon Horse","Kraken","Popo","thaKraken@youyou.com","dipsy"),
+            Article(4,"Blood God","Kratos","Killer","krakillall@youyou.com","dipsy")
             )
 
         val homeFeed = HomeFeed(items)

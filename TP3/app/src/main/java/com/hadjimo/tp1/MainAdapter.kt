@@ -21,11 +21,16 @@ class MainAdapter(val homeFeed: HomeFeed): RecyclerView.Adapter<CustomViewHolder
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         val article = homeFeed.article.get(position)
-        holder.view?.textView_article_title?.text = article.name
+        holder.view?.textView_article_title?.text = article.title
+        holder.view?.textView_article_name?.text = article.name
     }
 
 }
 
 class CustomViewHolder(val view: View): RecyclerView.ViewHolder(view) {
-
+    init {
+        view.setOnClickListener {
+            println("TEst")
+        }
+    }
 }
